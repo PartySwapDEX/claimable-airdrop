@@ -32,7 +32,8 @@ module.exports = {
       url: "https://api.avax-test.network/ext/bc/C/rpc",
       gas: 8000000,
       gasPrice: 225000000000,
-      timeout: 30000
+      timeout: 30000,
+      chainId: 43113
     },
   },
   mocha: {
