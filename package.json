@@ -1,11 +1,23 @@
 {
-  "name": "claimable-airdrop",
+  "name": "@partyswap-libs/claimable-airdrop",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://partyswap.netlify.app/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PartySwapDEX/claimable-airdrop"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+   "files": [
+    "contracts",
+    "artifacts"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -20,7 +32,9 @@
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.3.1",
+    "atob": "^2.1.2",
     "openzeppelin-solidity": "^4.3.1",
+    "utf8": "^3.0.0",
     "yay-token": "^2.0.1"
   }
 }

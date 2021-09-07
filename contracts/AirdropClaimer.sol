@@ -41,9 +41,7 @@ contract AirdropClaimer is Ownable {
             isBlacklisted(msg.sender) == false,
             "ERROR: You are blacklisted"
         );
-        // TODO: make transfer here
         party.transfer(msg.sender, amountPerAddress);
-        // TODO: blacklist
         _blacklistSelf();
     }
 
